@@ -13,8 +13,262 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: var(--themes-background);
+}
 
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image: var(--pattern-color);
+  background-size: cover;
+  display: grid;
+  gap: 54px;
+  justify-content: center
+}
+
+.theme-menu__button {
+  appearance: none;
+  background-color: transparent;
+  color: var(--themes-main-color);
+  font-family: PressStart2P-Regular, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  border: none;
+}
+/* --------------------------------------------------------------------------- */
+.theme-menu__button:hover {
+  opacity: 0.6;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  color: var(--themes-main-color);
+  opacity: 0.6;
+  font-family: PressStart2P-Regular;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  pointer-events: none;
+  animation: play 0.5s linear infinite;
+  position: absolute;
+  left: -110%;
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+}
+
+.theme-menu__button::after {
+  content: "";
+  display: block;
+  outline: 1px solid var(--themes-main-color);
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.header__theme-menu-button:focus {
+  appearance: none;
+  outline: none;
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* --------------------------------------------------------------------------- */
+.header {
+  max-height: 100vh;
+  margin-top: 100px;
+}
+
+.header-block {
+  width: 696px;
+  height: 364px;
+  border: 2px solid var(--themes-main-color);
+  background: var(--themes-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.header_logo {
+  display: block;
+  color: var(--themes-main-color);
+  font-family: PressStart2P-Regular;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.header-title {
+  display: block;
+  color: var(--themes-main-color);
+  font-family: PressStart2P-Regular;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  padding-left: 5px;
+}
+
+.section {
+  width: 696px;
+  background: var(--themes-background);
+}
+
+.title {
+  color: var(--themes-main-color);
+  font-family: Inter-Variable;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.section-title {
+  width: 696px;
+  height: 31px;
+  border: 2px solid var(--themes-main-color);
+  background: var(--themes-background);
+}
+
+.section-image {
+  position: relative;
+}
+
+.images-item {
+  width: 696px;
+  display: block;
+}
+
+.section-logo {
+  position: absolute;
+  left: 583px;
+  top: 25px;
+  z-index: 2;
+  color: var(--themes-main-color);
+  -webkit-text-stroke: 1px var(--themes-background);
+  font-family: PressStart2P-Regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+}
+
+.button__text {
+  color: var(--themes-main-color, #000);
+  font-family: PressStart2P-Regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  /* 12.6px */
+}
+
+.button-like {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  gap: 12px;
+
+}
+
+.card__like-button {
+  display: flex;
+  width: 130px;
+  height: 38px;
+  padding: 9px 17px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid var(--themes-main-color);
+  background: var(--themes-background);
+}
+
+.content-text {
+  color: var(--themes-main-color);
+  font-family: Inter-Variable;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  /* 116.667% */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
+}
+
+.text:first-child {
+  padding-bottom: 27px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.floppy {
+  inline-size: 21px;
+  position: relative;
+  z-index: 1;
+  color: var(--button-color);
+  mix-blend-mode: difference;
+}
+
+.floppy-dialog {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
 }

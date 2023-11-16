@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" />
-    <script src="./scripts/set-theme.js"></script>
-  </head>
-  <body class="page">
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark">
+  <title>Закрывающий тег</title>
+  <link rel="icon" href="./images/favicon.svg" sizes="any">
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./styles/globals.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/animations.css" />
+  <link rel="stylesheet" href="./styles/themes.css" />
+
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="header-block">
+      <h1 class="header_logo">&lt;/html&gt;</h1>
+      <h2 class="header-title">закрывающий тег</h2>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -23,12 +30,7 @@
             </button>
           </li>
           <li class="theme-menu__item">
-            <button
-              type="button"
-              data-theme="auto"
-              disabled
-              class="theme-menu__button"
-            >
+            <button type="button" data-theme="auto" disabled class="theme-menu__button">
               Авто
             </button>
           </li>
@@ -39,8 +41,89 @@
           </li>
         </ul>
       </nav>
-    </header>
-    <main></main>
-    <script src="./scripts/like.js"></script>
-  </body>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="section-title">
+        <h3 class="title">Фритрек и нулевой спринт: Подготовка к работе</h3>
+      </div>
+      <div class="section-image">
+        <img src="svg/bus violet.svg" class="images-item">
+        <h4 class="section-logo">&lt;/html&gt;</h4>
+      </div>
+
+      <div class="content">
+        <div class="content-text">
+          <p class="text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на
+            учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+          <p class="text">Место для ваших воспоминаний о начале обучения.</p>
+        </div>
+
+        <button class="button-like">
+
+          <div class="card__icon-button">
+            <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24"
+              fill="none">
+              <path d="M6 0H3V3H6V0Z" fill="black" />
+              <path d="M9 0H6V3H9V0Z" fill="black" />
+              <path d="M3 3H0V6H3V3Z" fill="black" />
+              <path d="M3 6H0V9H3V6Z" fill="black" />
+              <path d="M3 9H0V12H3V9Z" fill="black" />
+              <path d="M12 0H9V3H12V0Z" fill="black" />
+              <path d="M6 12H3V15H6V12Z" fill="black" />
+              <path d="M9 15H6V18H9V15Z" fill="black" />
+              <path d="M12 18H9V21H12V18Z" fill="black" />
+              <path d="M21 0H24V3H21V0Z" fill="black" />
+              <path d="M18 0H21V3H18V0Z" fill="black" />
+              <path d="M24 3H27V6H24V3Z" fill="black" />
+              <path d="M24 6H27V9H24V6Z" fill="black" />
+              <path d="M24 9H27V12H24V9Z" fill="black" />
+              <path d="M15 0H18V3H15V0Z" fill="black" />
+              <path d="M21 12H24V15H21V12Z" fill="black" />
+              <path d="M18 15H21V18H18V15Z" fill="black" />
+              <path d="M15 18H18V21H15V18Z" fill="black" />
+              <path d="M15 3H12V6H15V3Z" fill="black" />
+              <path d="M15 21H12V24H15V21Z" fill="black" />
+            </svg>
+          </div>
+          <div class="card__like-button">
+            <span class="button__text">Like</span>
+          </div>
+        </button>
+      </div>
+
+    </section>
+    <div class="your-class"></div>
+  </main>
+  <footer class="footer">
+<button class="button-footer" type="button" onclick="window['dialog'] .showModal()" aria-controls="dialog">
+  <svg viewBox="0 0 21 21" class="floppy">
+    <use href="svg/floppy.svg#floppy"></use>
+  </svg>
+  <p class="button-footer-text">Сохранить на память</p>
+</button>
+
+  </footer>
+
+  <dialog id="dialog__floppy" class="dialog__floppy">
+    <div class="dialog__info">
+      <svg class="floppy-dialog">
+        <use href="svg/floppy.svg#floppy"></use>
+      </svg>
+      <span class="dialog__floppy-text">
+        Вставьте дискету, чтобы продолжить
+      </span>
+    </div>
+    <button class="dialog__button text-button-decor"
+      type="button" 
+      onclick="window['dialog__floppy'].close()">OK</button>
+    </form>
+  </dialog>
+
+
+  <script src="./scripts/set-theme.js"></script>
+  <script src="./scripts/like.js"></script>
+</body>
+
 </html>
