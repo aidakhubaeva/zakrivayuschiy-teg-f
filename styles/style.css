@@ -13,11 +13,6 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-button {
-  appearance: none;
-  border: none;
-  outline: none;
-}
 
 body {
   background-color: var(--themes-background);
@@ -45,6 +40,7 @@ body {
   text-transform: uppercase;
   border: none;
 }
+
 /* --------------------------------------------------------------------------- */
 .theme-menu__button:hover {
   opacity: 0.6;
@@ -239,36 +235,26 @@ body {
   padding-bottom: 27px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.floppy {
-  inline-size: 21px;
-  position: relative;
-  z-index: 1;
-  color: var(--button-color);
-  mix-blend-mode: difference;
+.footer {
+  margin: 54px 180px 105px 180px;
 }
 
-.floppy-dialog {
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
+.button-footer {
+  width: 335px;
+  height: 51px;
+  outline: 2px solid var(--themes-main-color);
+  background: var(--themes-background);
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.button-footer-text {
+  color: var(--themes-main-color);
+}
+
+.floppy>svg {
+  color: var(--themes-main-color);
+  width: 21px;
+  height: 21px;
 }
