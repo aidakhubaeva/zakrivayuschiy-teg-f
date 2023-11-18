@@ -246,15 +246,20 @@ body {
   background: var(--themes-background);
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
+  gap: 8px;
 }
 
 .button-footer-text {
   color: var(--themes-main-color);
+  font-family: PressStart2P-Regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
 }
 
-.floppy>svg {
-  color: var(--themes-main-color);
-  width: 21px;
-  height: 21px;
+svg {
+  fill: var(--themes-main-color);
+
 }
