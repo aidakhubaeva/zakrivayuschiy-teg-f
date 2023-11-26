@@ -7,7 +7,7 @@
 :root.theme-light {
     --themes-background: #FFF;
     --themes-main-color: #000;
-    --themes-main-color-button: #000 opacity: 0.6;
+    --themes-main-color-button: #000 0.6;
     --pattern-color: repeating-linear-gradient(270deg,
             #000 0px,
             #000 2px,
@@ -19,13 +19,14 @@
             #000 2px,
             #000 4px),
         linear-gradient(#e7e7e7, #1a1a1a);
+    --button-hover: #ffffff;
 }
 
 @media (prefers-color-scheme: light) {
     :root.theme-light {
         --themes-background: #FFF;
         --themes-main-color: #000;
-        --themes-main-color-button: #000 ;
+        --themes-main-color-button: #000 0.6;
         --pattern-color: repeating-linear-gradient(270deg,
                 #000 0px,
                 #000 2px,
@@ -38,7 +39,7 @@
                 #000 4px),
             linear-gradient(#e7e7e7, #1a1a1a);
 
-            --color-buten:
+        --button-hover: #ffffff;
     }
 }
 
@@ -57,7 +58,7 @@
             #000 2px,
             #000 4px),
         linear-gradient(#007f0c, #004306);
-    
+    --button-hover: #00CC14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -75,6 +76,7 @@
                 #000 2px,
                 #000 4px),
             linear-gradient(#007f0c, #004306);
-    
+        --button-hover: #00CC14;
+
     }
 }

@@ -1,1 +1,77 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root.theme-light {
+    --themes-background: #FFF;
+    --themes-main-color: #000;
+    --themes-main-color-button: #000 0.6;
+    --pattern-color: repeating-linear-gradient(270deg,
+            #000 0px,
+            #000 2px,
+            transparent 2px,
+            transparent 4px),
+        repeating-linear-gradient(180deg,
+            transparent 0px,
+            transparent 2px,
+            #000 2px,
+            #000 4px),
+        linear-gradient(#e7e7e7, #1a1a1a);
+    --button-hover: #ffffff;
+}
+
+@media (prefers-color-scheme: light) {
+    :root.theme-light {
+        --themes-background: #FFF;
+        --themes-main-color: #000;
+        --themes-main-color-button: #000 0.6;
+        --pattern-color: repeating-linear-gradient(270deg,
+                #000 0px,
+                #000 2px,
+                transparent 2px,
+                transparent 4px),
+            repeating-linear-gradient(180deg,
+                transparent 0px,
+                transparent 2px,
+                #000 2px,
+                #000 4px),
+            linear-gradient(#e7e7e7, #1a1a1a);
+
+        --button-hover: #ffffff;
+    }
+}
+
+
+:root.theme-dark {
+    --themes-background: #000;
+    --themes-main-color: #00CC14;
+    --pattern-color: repeating-linear-gradient(270deg,
+            #000 0px,
+            #000 2px,
+            transparent 2px,
+            transparent 4px),
+        repeating-linear-gradient(180deg,
+            transparent 0px,
+            transparent 2px,
+            #000 2px,
+            #000 4px),
+        linear-gradient(#007f0c, #004306);
+    --button-hover: #00CC14;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root.theme-dark {
+        --themes-background: #000;
+        --themes-main-color: #00CC14;
+        --pattern-color: repeating-linear-gradient(270deg,
+                #000 0px,
+                #000 2px,
+                transparent 2px,
+                transparent 4px),
+            repeating-linear-gradient(180deg,
+                transparent 0px,
+                transparent 2px,
+                #000 2px,
+                #000 4px),
+            linear-gradient(#007f0c, #004306);
+        --button-hover: #00CC14;
+
+    }
+}

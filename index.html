@@ -44,88 +44,420 @@
     </div>
   </header>
   <main>
+    <!--------------section----------------->
     <section class="section">
+      <!--заголовок-->
       <div class="section-title">
         <h3 class="title">Фритрек и нулевой спринт: Подготовка к работе</h3>
       </div>
-
+      <!--заголовок--картинка с лого-->
       <div class="section-image">
-        <img src="svg/bus violet.svg" class="images-item">
+        <img src="./images/1.jpg" class="images images-first">
         <h4 class="section-logo">&lt;/html&gt;</h4>
       </div>
-
+      <!--картинка с лого--текст---->
       <div class="content">
         <div class="content-text">
           <p class="text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на
             учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
-          <p class="text">Место для ваших воспоминаний о начале обучения.</p>
+          <p class="text">Когда я только начинала учебу, сомнения по поводу выбора школы и конкретного направления
+            постоянно преследовали меня. Я проводила много времени, взвешивая все "за" и "против", не уверенная, что
+            выбранное мной место и профиль обучения - это именно то, что мне нужно.</p>
         </div>
-
-        <button class="button-like">
-          <div class="card__icon-button">
-
-            <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24"
-              fill="none">
-              <path d="M6 0H3V3H6V0Z" fill="black" />
-              <path d="M9 0H6V3H9V0Z" fill="black" />
-              <path d="M3 3H0V6H3V3Z" fill="black" />
-              <path d="M3 6H0V9H3V6Z" fill="black" />
-              <path d="M3 9H0V12H3V9Z" fill="black" />
-              <path d="M12 0H9V3H12V0Z" fill="black" />
-              <path d="M6 12H3V15H6V12Z" fill="black" />
-              <path d="M9 15H6V18H9V15Z" fill="black" />
-              <path d="M12 18H9V21H12V18Z" fill="black" />
-              <path d="M21 0H24V3H21V0Z" fill="black" />
-              <path d="M18 0H21V3H18V0Z" fill="black" />
-              <path d="M24 3H27V6H24V3Z" fill="black" />
-              <path d="M24 6H27V9H24V6Z" fill="black" />
-              <path d="M24 9H27V12H24V9Z" fill="black" />
-              <path d="M15 0H18V3H15V0Z" fill="black" />
-              <path d="M21 12H24V15H21V12Z" fill="black" />
-              <path d="M18 15H21V18H18V15Z" fill="black" />
-              <path d="M15 18H18V21H15V18Z" fill="black" />
-              <path d="M15 3H12V6H15V3Z" fill="black" />
-              <path d="M15 21H12V24H15V21Z" fill="black" />
-            </svg>
-          </div>
-          <div class="card__like-button">
+        <!--картинка с лого------кнопка Like---->
+        <div class="button_like_card">
+          <button class="button-like">
+            <div class="card__icon-button">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="heart">
+                  <path class="contour" id="Vector"
+                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                    fill="var(--themes-main-color)" />
+                  <path class="main-body" id="Vector_2"
+                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                    fill="none" />
+                  <path class="core" id="Vector_3"
+                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                    fill="none" />
+                </g>
+                <path class="sparks" id="Vector_4"
+                  d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                  fill="#FF0000" />
+              </svg>
+            </div>
+          </button>
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
-          </div>
-        </button>
-      </div>
-
+          </button>
+        </div>
     </section>
+    <!--------------section----------------->
+    <section class="section">
+      <!--заголовок-->
+      <div class="section-title">
+        <h3 class="title">Фритрек и нулевой спринт: Подготовка к работе</h3>
+      </div>
+      <!--заголовок--картинка с лого-->
+      <div class="section-image">
+        <img src="./images/2.jpg" class="images images-second">
+        <h4 class="section-logo">&lt;/html&gt;</h4>
+      </div>
+      <!--картинка с лого--текст---->
+      <div class="content">
+        <div class="content-text">
+          <p class="text">На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. Один
+            из них — страх перед чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим
+            ощущением скрываются более глубокие вопросы: с чего начать? а вдруг будет слишком сложно? что, если я не
+            справлюсь?</p>
+          <p class="text">Когда начинался мой первый спринт, я ощущала смешанные эмоции – волнение и неуверенность. Я
+            задавалась вопросами о правильности выбранного направления и способна ли я справиться с вызовами, которые
+            ждали меня впереди. Начало было полно сомнений, но каждый шаг в учебном процессе делал меня увереннее, пока
+            я открывая новые способности в себе.</p>
+        </div>
+        <!--картинка с лого------кнопка Like---->
+        <div class="button_like_card">
+          <button class="button-like">
+            <div class="card__icon-button">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="heart">
+                  <path class="contour" id="Vector"
+                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                    fill="var(--themes-main-color)" />
+                  <path class="main-body" id="Vector_2"
+                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                    fill="none" />
+                  <path class="core" id="Vector_3"
+                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                    fill="none" />
+                </g>
+                <path class="sparks" id="Vector_4"
+                  d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                  fill="#FF0000" />
+              </svg>
+            </div>
+          </button>
+          <button type="button" class="card__like-button button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+    </section>
+    <!--------------section----------------->
+    <section class="section">
+      <!--заголовок-->
+      <div class="section-title">
+        <h3 class="title">Фритрек и нулевой спринт: Подготовка к работе</h3>
+      </div>
+      <!--заголовок--картинка с лого-->
+      <div class="section-image">
+        <img src="./images/3.jpg" class="images images-third">
+        <h4 class="section-logo">&lt;css&gt;</h4>
+      </div>
+      <!--картинка с лого--текст---->
+      <div class="content">
+        <div class="content-text">
+          <p class="text">Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и
+            смениться ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.</p>
+          <p class="text">Завершение моего первого спринта оказалось для меня сюрпризом: я была поражена тем, что
+            действительно смогла его одолеть. Ощущение достижения чего-то важного и возможность видеть результаты своих
+            усилий были вдохновляющими и подтвердили, что выбранный мной путь - верный.</p>
+        </div>
+        <!--картинка с лого------кнопка Like---->
+        <div class="button_like_card">
+          <button class="button-like">
+            <div class="card__icon-button">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="heart">
+                  <path class="contour" id="Vector"
+                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                    fill="var(--themes-main-color)" />
+                  <path class="main-body" id="Vector_2"
+                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                    fill="none" />
+                  <path class="core" id="Vector_3"
+                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                    fill="none" />
+                </g>
+                <path class="sparks" id="Vector_4"
+                  d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                  fill="#FF0000" />
+              </svg>
+            </div>
+          </button>
+          <button type="button" class="card__like-button button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+    </section>
+    <!--------------section----------------->
+    <section class="section">
+      <!--заголовок-->
+      <div class="section-title">
+        <h3 class="title">Фритрек и нулевой спринт: Подготовка к работе</h3>
+      </div>
+      <!--заголовок--картинка с лого-->
+      <div class="section-image">
+        <img src="./images/4.jpg" class="images images-fourdh">
+        <h4 class="section-logo">&lt;desigions&gt;</h4>
+      </div>
+      <!--картинка с лого--текст---->
+      <div class="content">
+        <div class="content-text">
+          <p class="text">На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё
+            впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не
+            подвержены перфекционизму и вместо того, чтобы сделать идеально, старались просто сделать.</p>
+          <p class="text">Мой второй спринт начался с ожиданий сложностей, аналогичных тем, что возникали во время
+            первого. Я ждала, что каждое действие будет трудным, что я буду тратить много времени на выполнение каждого
+            шага.</p>
+        </div>
+        <!--картинка с лого------кнопка Like---->
+        <div class="button_like_card">
+          <button class="button-like">
+            <div class="card__icon-button">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="heart">
+                  <path class="contour" id="Vector"
+                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                    fill="var(--themes-main-color)" />
+                  <path class="main-body" id="Vector_2"
+                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                    fill="none" />
+                  <path class="core" id="Vector_3"
+                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                    fill="none" />
+                </g>
+                <path class="sparks" id="Vector_4"
+                  d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                  fill="#FF0000" />
+              </svg>
+            </div>
+          </button>
+          <button type="button" class="card__like-button button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+    </section>
+    <!--------------section----------------->
+    <section class="section">
+      <!--заголовок-->
+      <div class="section-title">
+        <h3 class="title">Фритрек и нулевой спринт: Подготовка к работе</h3>
+      </div>
+      <!--заголовок--картинка с лого-->
+      <div class="section-image">
+        <img src="./images/5.jpg" class="images images-fifth">
+        <h4 class="section-logo">care</h4>
+      </div>
+      <!--картинка с лого--текст---->
+      <div class="content">
+        <div class="content-text">
+          <p class="text">Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого
+            мира). Вас окружали одногруппники, команда сопровождения и просто близкие люди, которым можно пожаловаться,
+            если очередной макет просто так не поддавался. Осваивать что-то новое легче, когда рядом есть
+            единомышленники, не правда ли?</p>
+          <p class="text">Второй спринт дался мне на удивление легко. Я быстро справлялась с любыми задачами, даже с
+            теми, которые на первый взгляд казались невыполнимыми.</p>
+        </div>
+        <!--картинка с лого------кнопка Like---->
+        <div class="button_like_card">
+          <button class="button-like">
+            <div class="card__icon-button">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="heart">
+                  <path class="contour" id="Vector"
+                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                    fill="var(--themes-main-color)" />
+                  <path class="main-body" id="Vector_2"
+                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                    fill="none" />
+                  <path class="core" id="Vector_3"
+                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                    fill="none" />
+                </g>
+                <path class="sparks" id="Vector_4"
+                  d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                  fill="#FF0000" />
+              </svg>
+            </div>
+          </button>
+          <button type="button" class="card__like-button button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+    </section>
+    <!--------------section----------------->
+    <section class="section">
+      <!--заголовок-->
+      <div class="section-title">
+        <h3 class="title">Фритрек и нулевой спринт: Подготовка к работе</h3>
+      </div>
+      <!--заголовок--картинка с лого-->
+      <div class="section-image">
+        <img src="./images/6.jpg" class="images images-sixth">
+        <h4 class="section-logo">&lt;support&gt;</h4>
+      </div>
+      <!--картинка с лого--текст---->
+      <div class="content">
+        <div class="content-text">
+          <p class="text">На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться, что
+            решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.</p>
+          <p class="text">Когда я начала третий спринт и открыла задание, меня охватила волна беспокойства. Я долго не
+            понимала, как я вообще смогу выполнить такую сложную задачу.</p>
+        </div>
+        <!--картинка с лого------кнопка Like---->
+        <div class="button_like_card">
+          <button class="button-like">
+            <div class="card__icon-button">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="heart">
+                  <path class="contour" id="Vector"
+                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                    fill="var(--themes-main-color)" />
+                  <path class="main-body" id="Vector_2"
+                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                    fill="none" />
+                  <path class="core" id="Vector_3"
+                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                    fill="none" />
+                </g>
+                <path class="sparks" id="Vector_4"
+                  d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                  fill="#FF0000" />
+              </svg>
+            </div>
+          </button>
+          <button type="button" class="card__like-button button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+    </section>
+    <section class="section">
+      <!--заголовок-->
+      <div class="section-title">
+        <h3 class="title">Фритрек и нулевой спринт: Подготовка к работе</h3>
+      </div>
+      <!--заголовок--картинка с лого-->
+      <div class="section-image">
+        <img src="./images/7.jpg" class="images images-seventh">
+        <h4 class="section-logo">&lt;lifes-style: none;&gt;</h4>
+      </div>
+      <!--картинка с лого--текст---->
+      <div class="content">
+        <div class="content-text">
+          <p class="text">Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную
+            пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь не забыть пожить. В такие
+            моменты очень нужна концентрация. Вспомните, откуда вы её черпали.</p>
+          <p class="text">Мой третий спринт был особенным: с двумя завершенными проектами я чувствовала себя более
+            уверенно. Однако этот спринт принёс мне неожиданные трудности, которые стали новым вызовом, требующим
+            упорства и терпения.</p>
+        </div>
+        <!--картинка с лого------кнопка Like---->
+        <div class="button_like_card">
+          <button class="button-like">
+            <div class="card__icon-button">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="heart">
+                  <path class="contour" id="Vector"
+                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                    fill="var(--themes-main-color)" />
+                  <path class="main-body" id="Vector_2"
+                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                    fill="none" />
+                  <path class="core" id="Vector_3"
+                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                    fill="none" />
+                </g>
+                <path class="sparks" id="Vector_4"
+                  d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                  fill="#FF0000" />
+              </svg>
+            </div>
+          </button>
+          <button type="button" class="card__like-button button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+    </section>
+    <section class="section">
+      <!--заголовок-->
+      <div class="section-title">
+        <h3 class="title">Фритрек и нулевой спринт: Подготовка к работе</h3>
+      </div>
+      <!--заголовок--картинка с лого-->
+      <div class="section-image">
+        <img src="./images/8.jpg" class="images images-eighth">
+        <h4 class="section-logo">&lt;lifes-style: none;&gt;</h4>
+      </div>
+      <!--картинка с лого--текст---->
+      <div class="content">
+        <div class="content-text">
+          <p class="text">Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много
+            материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И
+            этот мир постоянно меняется. Познать его полностью не получится, но это тот случай, когда важен сам процесс
+            познания. Ведь часто путь — и есть результат.</p>
+          <p class="text">Всё зависит от результата</p>
+        </div>
+        <!--картинка с лого------кнопка Like---->
+        <div class="button_like_card">
+          <button class="button-like">
+            <div class="card__icon-button">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="heart">
+                  <path class="contour" id="Vector"
+                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                    fill="var(--themes-main-color)" />
+                  <path class="main-body" id="Vector_2"
+                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                    fill="none" />
+                  <path class="core" id="Vector_3"
+                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                    fill="none" />
+                </g>
+                <path class="sparks" id="Vector_4"
+                  d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                  fill="#FF0000" />
+              </svg>
+            </div>
+          </button>
+          <button type="button" class="card__like-button button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+    </section>
+    <!--картинка с лого------кнопка Like---->
     <div class="your-class"></div>
   </main>
 
   <footer class="footer">
-
-
-
     <button class="button-footer" type="button" onclick="window['dialog-id'].showModal();" aria-controls="dialog-id">
-
-      <svg class="floppy" viewBox="0 0 39 39" width="21" height="21" fill="currentColor" stroke="currentColor">
+      <svg class="floppy" viewBox="0 0 39 39" width="21" height="21">
         <use href="./svg/save.svg#floppy-save">
       </svg>
 
       <p class="button-footer-text">Сохранить на память</p>
     </button>
-
   </footer>
 
-  <dialog id="dialog-id">
+  <dialog id="dialog-id" class="dialog-id">
     <div class="dialog_menu">
-      <svg class="floppy" viewBox="0 0 39 39" width="21" height="21" fill="currentColor" stroke="currentColor">
+      <svg class="dialog-floppy" viewBox="0 0 39 39" width="39" height="39">
         <use href="./svg/save.svg#floppy-save">
       </svg>
       <span class="dialog_text">
-        Вставьте дискету, чтобы продолжить
+        Вставьте<br> дискету, чтобы<br> продолжить
       </span>
     </div>
-    <button type="submit">ок</button>
+    <form method="dialog-id">
+      <button id="closeDialog" class="dialog-button">ок</button>
+    </form>
   </dialog>
-
-
   <script src="./scripts/set-theme.js"></script>
   <script src="./scripts/like.js"></script>
 </body>
