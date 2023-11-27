@@ -11,7 +11,7 @@
 body {
   min-inline-size: 375px;
   margin: 0;
-
+  padding: 0;
 }
 
 h1,

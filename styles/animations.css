@@ -14,11 +14,11 @@
 
 @keyframes play {
     0% {
-        right: 0;
+      transform: translateX(0);
     }
 
     100% {
-        right: 4px;
+      transform: translateX(4px);
     }
 }
 
