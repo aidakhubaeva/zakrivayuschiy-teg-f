@@ -194,13 +194,11 @@
   top: 25px;
   z-index: 2;
   -webkit-text-stroke: 0.5px var(--themes-background);
-  box-shadow: 2px 2px 0px 0px transparent;
-  transition: box-shadow 0.3s ease-in-out;
-  position: absolute;
   color: var(--themes-main-color);
   font-family: var(--accent-font);
   font-size: var(--small-font-size);
   font-weight: var(--normal_weight);
+  text-transform: uppercase;
   opacity: 0.5;
   mix-blend-mode: hard-light;
 }
@@ -357,7 +355,6 @@
   line-height: 12.6px;
 }
 
-/*---------------------------------------*/
 .button__text {
   width: 130px;
   height: 38px;
