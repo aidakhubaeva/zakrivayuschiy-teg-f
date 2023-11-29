@@ -2,8 +2,8 @@
 :root {
     --accent-font: 'PressStart2P', fantasy;
     --main-font: 'Inter', sans-serif;
-    --small: 14px;
-    --medium: 18px;
+    --small-font-size: 14px;
+    --medium-font-size: 18px;
     --heart-color: #ff0000;
     --backdrop: rgba(0 0 0/0.75);
 
@@ -18,25 +18,10 @@
         repeating-linear-gradient(180deg,
             #fff 0px 2px,
             transparent 2px 4px),
-        linear-gradient(180deg, #fff 0%, #1a1a1a 100%);
+            linear-gradient(to bottom, #fff 0.01%, #1a1a1a);
     --button-hover: #ffffff;
     --normal-weight: 400;
     --bold-weight: 700;
     --favicon-color: #000;
-
-    --themes-background: #000;
-    --themes-main-color: #00CC14;
-    --pattern-color: repeating-linear-gradient(90deg,
-            #000 0px 2px,
-            transparent 2px 4px),
-        repeating-linear-gradient(180deg,
-            #000 0px 2px,
-            transparent 2px 4px),
-        linear-gradient(180deg,
-            #007f0c 0%,
-            #004306 100%);
-    --button-hover: #00CC14;
-    --normal-weight: 465;
-    --bold-weight: 785;
-    --favicon-color:#00CC14;
+    --like-sparks-color: #ff0000;
 }
