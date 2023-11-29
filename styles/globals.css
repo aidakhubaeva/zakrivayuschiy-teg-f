@@ -8,7 +8,24 @@
   box-sizing: border-box;
 }
 
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: PressStart2P;
+    font-weight: 400;
+  }
+}
+
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: Inter;
+    font-weight: 400 785;
+  }
+}
+
 body {
+  font-family: PressStart2P;
+  font-family: Inter;
   min-inline-size: 375px;
   margin: 0;
   padding: 0;

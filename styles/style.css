@@ -188,27 +188,26 @@
   filter: brightness(50%) grayscale(200%) drop-shadow(50);
 }
 
-.section-logo {
-  position: absolute;
-  right: 25px;
-  top: 25px;
-  z-index: 2;
-  -webkit-text-stroke: 0.5px var(--themes-background);
-  color: var(--themes-main-color);
-  font-family: var(--accent-font);
-  font-size: var(--small-font-size);
-  font-weight: var(--normal_weight);
-  text-transform: uppercase;
-  opacity: 0.5;
-  mix-blend-mode: hard-light;
+@supports (-webkit-text-stroke: 0.5px var(--themes-background)) {
+  .section-logo {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    z-index: 2;
+    -webkit-text-stroke: 0.5px var(--themes-background);
+    color: var(--themes-main-color);
+    font-family: var(--accent-font);
+    font-size: var(--small-font-size);
+    font-weight: var(--normal_weight);
+    text-transform: uppercase;
+    opacity: 0.5;
+    mix-blend-mode: hard-light;
+  }
 }
-
-@supports (-webkit-text-stroke: 0.5px var(--themes-background)) {}
 
 .content {
   display: flex;
   flex-direction: column;
-  gap: 25px;
   padding: 25px;
   border-top: 2px solid var(--themes-main-color);
 }
@@ -222,7 +221,7 @@
 }
 
 .text:last-child {
-  padding: none;
+  padding-top: 27px;
 }
 
 .card__button {
@@ -439,7 +438,6 @@
 }
 
 .floppy {
-  color: var(--themes-main-color);
   z-index: 1;
   mix-blend-mode: difference;
   color: var(--button-hover);
@@ -461,7 +459,6 @@
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 30px;
   padding: 30px;
