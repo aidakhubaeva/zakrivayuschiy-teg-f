@@ -348,7 +348,7 @@
   padding: 30px;
 }
 
-.dialog_id:not([open]){
+.dialog_id:not([open]) {
   pointer-events: none;
   opacity: 0;
 }
@@ -374,7 +374,7 @@
   max-inline-size: 198px;
   text-transform: uppercase;
   line-height: 150%;
-  color: var(--themes-main-color);
+  color: var(--themes-main-color,#000000);
   font-family: var(--accent-font);
   font-size: var(--small-font-size);
 }

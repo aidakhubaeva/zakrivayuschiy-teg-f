@@ -344,7 +344,7 @@
       </button>
     </div>
   </main>
-  <dialog id="dialog-id" class="dialog_id">
+  <dialog id="dialog-id" class="dialog_id" open="">
     <div class=" dialog_menu">
       <svg class="dialog-floppy" viewBox="0 0 39 39" width="39" height="39">
         <use href="./svg/save.svg#floppy-save"></use>
@@ -354,7 +354,7 @@
       </p>
     </div>
     <form method="dialog" class="dialog__form">
-      <button id="closeDialog" type="submit" onclick="window['dialog-id'].close()"class="dialog-button">ок</button>
+      <button type="submit" onclick="window['dialog-id'].close()" class="dialog-button">ок</button>
     </form>
   </dialog>
   <script src="./scripts/set-theme.js"></script>
