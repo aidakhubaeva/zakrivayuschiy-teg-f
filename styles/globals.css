@@ -24,8 +24,7 @@
 }
 
 body {
-  font-family: PressStart2P;
-  font-family: Inter;
+  font-family: PressStart2P, Inter;
   min-inline-size: 375px;
   margin: 0;
   padding: 0;

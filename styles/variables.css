@@ -20,8 +20,8 @@
             transparent 2px 4px),
             linear-gradient(to bottom, #fff 0.01%, #1a1a1a);
     --button-hover: #ffffff;
-    --normal-weight: 400;
-    --bold-weight: 700;
+    --normal-font-weight: 400;
+    --bold-font-weight: 700;
     --favicon-color: #000;
     --like-sparks-color: #ff0000;
 }
