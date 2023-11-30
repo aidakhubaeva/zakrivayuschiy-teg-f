@@ -175,7 +175,7 @@
 }
 
 .images_filter_contrast {
-  filter: contrast(100%);
+  filter: contrast(100%) drop-shadow(50%) invert(20%);
 }
 
 .images_filter_sepia {
@@ -272,19 +272,6 @@
   position: relative;
 }
 
-.card__like-button {
-  padding: 9px 17px;
-  min-height: 38px;
-  inline-size: 130px;
-  border: 2px solid var(--themes-main-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
 .button::before {
   content: "";
   position: absolute;
@@ -332,13 +319,6 @@
   gap: 8px;
 }
 
-.save-button {
-  padding: 15px 20px;
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-}
-
 .button__text {
   z-index: 1;
   mix-blend-mode: difference;
@@ -350,8 +330,6 @@
   align-items: center;
   justify-content: center;
 }
-
-
 
 .floppy {
   z-index: 1;
