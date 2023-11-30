@@ -343,13 +343,12 @@
   border: 2px solid var(--themes-main-color);
   background-color: var(--themes-background);
   inline-size: clamp(21.5625rem, 21.2984rem + 1.1268vw, 22.3125rem);
-
   flex-direction: column;
   gap: 30px;
   padding: 30px;
 }
 
-.dialog_id:not([open]) {
+.dialog_id:not([open]){
   pointer-events: none;
   opacity: 0;
 }
@@ -375,6 +374,7 @@
   max-inline-size: 198px;
   text-transform: uppercase;
   line-height: 150%;
+  color: var(--themes-main-color);
   font-family: var(--accent-font);
   font-size: var(--small-font-size);
 }
@@ -393,6 +393,7 @@
   font-size: var(--small-font-size);
   font-variation-settings: "wght" var(--normal-font-weight);
   line-height: 90%;
+  color: var(--themes-main-color);
 }
 
 @media screen and (max-width: 375px) {
