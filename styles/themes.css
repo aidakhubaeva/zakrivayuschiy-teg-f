@@ -14,7 +14,7 @@
         repeating-linear-gradient(180deg,
             #d3d3d3 0px 2px,
             transparent 2px 4px),
-        linear-gradient(to bottom, #d3d3d3 0.01%, #1a1a1a);
+        linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
     --button-hover: #ffffff;
     --normal-font-weight: 400;
     --bold-font-weight: 700;
@@ -29,12 +29,12 @@
         --themes-main-color: #000;
         --themes-main-color-button: #000 0.6;
         --pattern-color: repeating-linear-gradient(90deg,
-                #fff 0px 2px,
+        #d3d3d3 0px 2px,
                 transparent 2px 4px),
             repeating-linear-gradient(180deg,
-                #fff 0px 2px,
+            #d3d3d3 0px 2px,
                 transparent 2px 4px),
-            linear-gradient(to bottom, #fff 0.01%, #1a1a1a);
+            linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
         --button-hover: #ffffff;
         --normal-font-weight: 400;
         --bold-font-weight: 700;

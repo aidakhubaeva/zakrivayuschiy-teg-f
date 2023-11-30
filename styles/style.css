@@ -31,7 +31,7 @@
   border: 2px solid var(--themes-main-color);
   margin-block-start: 100px;
   margin-block-end: 100px;
-  padding: 135px 0 20px 0;
+  padding: 135px 0 19px 0;
   inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
 }
 
@@ -179,7 +179,7 @@
 }
 
 .images_filter_multiple {
-  filter: drop-shadow(50%) invert(20%) contrast(100%);
+  filter: drop-shadow(50%) invert(20%);
 }
 
 .images_filter_sepia {
@@ -239,6 +239,7 @@
 
 .card__icon-button {
   transition: border-color 0.3s ease;
+  margin-block-start: 2px;
   min-block-size: 36px;
   appearance: none;
   border: none;
@@ -264,7 +265,6 @@
 }
 
 .card__like-button {
-  padding: 9px 17px;
   min-height: 38px;
   inline-size: 130px;
   border: 2px solid var(--themes-main-color);
@@ -302,9 +302,6 @@
 }
 
 .card__save-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-block-end: 100px;
   padding-inline: 30px;
 }
@@ -315,11 +312,9 @@
   transition: box-shadow 0.3s ease-in-out;
   cursor: pointer;
   position: relative;
-  align-items: center;
-  justify-content: center;
   padding: 15px 20px;
   display: flex;
-  flex-direction: row;
+  align-items: center;
   gap: 8px;
 }
 
@@ -339,13 +334,16 @@
   z-index: 1;
   mix-blend-mode: difference;
   color: var(--button-hover);
+  block-size: 21px;
+  inline-size: 21px;
 }
 
 .dialog_id {
   display: flex;
   border: 2px solid var(--themes-main-color);
   background-color: var(--themes-background);
-  line-height: 1.5;
+  inline-size: clamp(21.5625rem, 21.2984rem + 1.1268vw, 22.3125rem);
+
   flex-direction: column;
   gap: 30px;
   padding: 30px;
@@ -357,22 +355,28 @@
 }
 
 .dialog_id::backdrop {
-  background-color: var(--backdrop);
+  background-color: rgba(0 0 0/0.75);
 }
 
 .dialog_menu {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 20px;
 }
 
 .dialog-floppy {
   color: var(--themes-main-color);
+  flex-shrink: 0;
+  inline-size: 39px;
+  block-size: 39px;
 }
 
 .button__dialog-text {
   max-inline-size: 198px;
+  text-transform: uppercase;
+  line-height: 150%;
+  font-family: var(--accent-font);
+  font-size: var(--small-font-size);
 }
 
 .dialog__form {
@@ -385,20 +389,31 @@
   padding: 9px 17px;
   border: 2px solid var(--themes-main-color);
   background-color: transparent;
+  font-family: var(--accent-font);
+  font-size: var(--small-font-size);
+  font-variation-settings: "wght" var(--normal-font-weight);
+  line-height: 90%;
 }
 
 @media screen and (max-width: 375px) {
 
   .header {
-    inline-size: 100%
+    inline-size: 100%;
+    padding-top: 120px;
+
   }
 
   .floppy {
-    margin-bottom: 8px;
+    block-size: 28px;
+    inline-size: 28px;
   }
+
 
   .save-button {
     flex-direction: column
   }
 
+  .dialog_menu {
+    justify-content: center;
+  }
 }

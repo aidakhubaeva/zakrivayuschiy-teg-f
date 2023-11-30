@@ -50,7 +50,7 @@
   opacity: 0;
 }
 
-.like-icon .heart {
+.like-icon .heart{
   transform-origin: center;
 }
 
@@ -105,7 +105,7 @@
 }
 
 .like-icon.is-liked {
-  animation: heart 100ms 300ms ease-in 1 alternate none running;
+  animation: heart 100ms 300ms ease-in 1 alternate;
 }
 
 .like-icon.is-liked .sparks {
