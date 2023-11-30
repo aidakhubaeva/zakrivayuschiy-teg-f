@@ -179,7 +179,7 @@
 }
 
 .images_filter_multiple {
-  filter: drop-shadow(50%) invert(20%);
+  filter: drop-shadow(50%) invert(20%) blur(1px);
 }
 
 .images_filter_sepia {
