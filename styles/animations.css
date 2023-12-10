@@ -28,8 +28,12 @@
     opacity: 0;
   }
 
-  100% {
+  50% {
     opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
@@ -48,10 +52,6 @@
 
 .sparks {
   opacity: 0;
-}
-
-.like-icon .heart {
-  transform-origin: center;
 }
 
 .like-icon .contour {
@@ -105,9 +105,10 @@
 }
 
 .like-icon.is-liked {
-  animation: heart 100ms 300ms ease-in 1 alternate;
+  transform-origin: center;
+  animation: heart 0.3s ease-in 0.1s alternate;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks 0.3s ease-in 0.3s 1 alternate;
+  animation: sparks 0.3s ease-in 0.3s alternate;
 }

@@ -43,8 +43,8 @@
   </header>
   <main class="main">
     <section class="section">
-      <h2 class="title">Фритрек и нулевой спринт: Подготовка к работе</h2>
-      <div class="section-image">
+      <h2 class="section__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+      <div class="section__images">
         <img src="./images/phil-3.jpg" alt="inspirational picture" class="images images_filter_contrast">
         <p class="section-logo">&lt;/html&gt;</p>
       </div>
@@ -79,8 +79,8 @@
       </div>
     </section>
     <section class="section">
-      <h2 class="title">1 спринт: Я — чистый лист</h2>
-      <div class="section-image">
+      <h2 class="section__title">1 спринт: Я — чистый лист</h2>
+      <div class="section__images">
         <img src="./images/phil-1.jpg" alt="inspirational picture" class="images images_filter_invert">
         <p class="section-logo">&lt;/html&gt;</p>
       </div>
@@ -115,8 +115,8 @@
       </div>
     </section>
     <section class="section">
-      <h2 class="title">1 спринт: А если не получится?</h2>
-      <div class="section-image">
+      <h2 class="section__title">1 спринт: А если не получится?</h2>
+      <div class="section__images">
         <img src="./images/phil-5.jpg" alt="inspirational picture" class="images images_filter_brightness">
         <p class="section-logo">&lt;css&gt;</p>
       </div>
@@ -151,8 +151,8 @@
       </div>
     </section>
     <section class="section">
-      <h2 class="title">2 спринт: Погоня за идеалом</h2>
-      <div class="section-image">
+      <h2 class="section__title">2 спринт: Погоня за идеалом</h2>
+      <div class="section__images">
         <img src="./images/phil-2.jpg" alt="inspirational picture" class="images images_filter_grayscale">
         <p class="section-logo">&lt;desigions&gt;</p>
       </div>
@@ -187,8 +187,8 @@
       </div>
     </section>
     <section class="section">
-      <h2 class="title">2 спринт: О тех, кто рядом</h2>
-      <div class="section-image">
+      <h2 class="section__title">2 спринт: О тех, кто рядом</h2>
+      <div class="section__images">
         <img src="./images/phil-6.jpg" alt="inspirational picture" class="images images_filter_saturate">
         <p class="section-logo">care</p>
       </div>
@@ -223,8 +223,8 @@
       </div>
     </section>
     <section class="section">
-      <h2 class="title">3 спринт: Обходные стратегии</h2>
-      <div class="section-image">
+      <h2 class="section__title">3 спринт: Обходные стратегии</h2>
+      <div class="section__images">
         <img src="./images/phil-4.jpg" alt="inspirational picture" class="images images_filter_blur">
         <p class="section-logo">&lt;support&gt;</p>
       </div>
@@ -261,8 +261,8 @@
 
 
     <section class="section">
-      <h2 class="title">3 спринт: Когда опускаются руки</h2>
-      <div class="section-image">
+      <h2 class="section__title">3 спринт: Когда опускаются руки</h2>
+      <div class="section__images">
         <img src="./images/phil-7.jpg" alt="inspirational picture" class="images images_filter_multiple">
         <p class="section-logo">&lt;lifes-style: none;&gt;</p>
       </div>
@@ -299,8 +299,8 @@
 
 
     <section class="section">
-      <h2 class="title">«Сейчас я здесь»</h2>
-      <div class="section-image">
+      <h2 class="section__title">«Сейчас я здесь»</h2>
+      <div class="section__images">
         <img src="./images/phil-8.jpg" alt="inspirational picture" class="images images_filter_sepia">
         <p class="section-logo">&lt;experience&gt;</p>
       </div>
@@ -309,6 +309,7 @@
           учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
         <p class="text">Прошла все стадии принятия горя. Достигла дзена</p>
       </div>
+
       <div class="card__controls">
         <button class="card__icon-button" type="button">
           <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" aria-hidden="true"
@@ -334,27 +335,32 @@
         </button>
       </div>
     </section>
+
     <div class="card__save-button">
       <button class="button save-button" type="button" onclick="window['dialog-id'].showModal();"
         aria-controls="dialog-id">
-        <svg class="floppy" viewBox="0 0 39 39" width="21" height="21">
+        <svg class="save__floppy" viewBox="0 0 39 39" width="21" height="21">
           <use href="./svg/save.svg#floppy-save"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
     </div>
   </main>
-  <dialog id="dialog-id" class="dialog_id">
-    <div class=" dialog_menu">
-      <svg class="dialog-floppy" viewBox="0 0 39 39" width="39" height="39">
+
+
+  <dialog id="dialog-id" class="dialog__id">
+    <div class="dialog__menu">
+      <svg class="dialog__floppy" viewBox="0 0 39 39" width="39" height="39">
         <use href="./svg/save.svg#floppy-save"></use>
       </svg>
-      <p class="button__dialog-text">
+      <p class="dialog__text">
         Вставьте дискету, чтобы продолжить
       </p>
     </div>
     <form method="dialog" class="dialog__form">
-      <button type="submit" onclick="window['dialog-id'].close()" class="dialog-button">ок</button>
+      <button type="submit" class="button dialog__button">
+        <span class="button__text">ок</span>
+      </button>
     </form>
   </dialog>
   <script src="./scripts/set-theme.js"></script>

@@ -10,7 +10,7 @@
 
 body {
   font-family: Inter, sans-serif;
-  font-family: PressStart2P, fantasy;
+  color: var(--themes-main-color);
   min-inline-size: 375px;
   margin: 0;
   padding: 0;
