@@ -109,7 +109,7 @@
 .section {
   border: 2px solid var(--themes-main-color);
   background: var(--themes-background);
-  margin-block-end: 52px;
+  margin-block-end: 51px;
   inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
 }
 
@@ -171,7 +171,6 @@
   right: 25px;
   top: 25px;
   z-index: 2;
-  -webkit-text-stroke: 0.5px var(--color-text-stroke);
   text-shadow: 0 0 1px currentColor;
   font-family: var(--accent-font);
   font-size: var(--small-font-size);
@@ -192,7 +191,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  padding: 25px;
+  padding: 25px 25px 22px 25px;
 }
 
 .text {
@@ -206,9 +205,10 @@
 }
 
 .card__controls {
-  margin-block-end: 24px;
+  margin-block-end: 23px;
   margin-inline-end: 25px;
   display: flex;
+  align-items: center;
   justify-content: right;
 }
 
@@ -217,7 +217,7 @@
   appearance: none;
   padding: 0;
   margin-inline-end: 5px;
-  border: none;
+  border-color: transparent;
   cursor: pointer;
   background-color: transparent;
   position: relative;
@@ -228,7 +228,7 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--themes-main-color);
+  border: 2px solid var(--themes-main-color);
 }
 
 .button {
@@ -306,7 +306,6 @@
 .dialog__id {
   display: flex;
   align-items: center;
-  border: 2px solid var(--themes-main-color);
   background-color: var(--themes-background);
   max-inline-size: 357px;
   flex-direction: column;
@@ -360,6 +359,12 @@
     inline-size: 100%;
     padding-top: 120px;
   }
+
+  .save__floppy {
+    block-size: 28px;
+    inline-size: 28px;
+  }
+
 
   .floppy {
     block-size: 28px;

@@ -22,24 +22,17 @@
   }
 }
 
-
 @keyframes sparks {
   0% {
     opacity: 0;
   }
 
-  50% {
-    opacity: 1;
-  }
-
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
-
 @keyframes heart {
-
   0% {
     transform: scale(1);
   }
@@ -52,6 +45,10 @@
 
 .sparks {
   opacity: 0;
+}
+
+.like-icon {
+  transform-origin: center;
 }
 
 .like-icon .contour {
