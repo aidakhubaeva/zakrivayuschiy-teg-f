@@ -1,10 +1,6 @@
 # zakrivayuschiy-teg-f
 Проект "Закрывающий тег"
-<<<<<<< HEAD
-https://github.com/aidakhubaeva/zakrivayuschiy-teg-f.git
-https://aidakhubaeva.github.io/zakrivayuschiy-teg-f/
-=======
-git@github.com:aidakhubaeva/zakrivayuschiy-teg-f.git
+akhubaeva/zakrivayuschiy-teg-f.git
 
 ![Project Preview](images/zakrivayuschiy-teg-f.jpg)
 
@@ -56,7 +52,3 @@ git@github.com:aidakhubaeva/zakrivayuschiy-teg-f.git
   - Labels with text and effects such as `mix-blend-mode` and `text-stroke` were added above card images.
   - `text-stroke` support was checked via `@supports`, with `text-shadow` used as a fallback.
 
----
-
-### Deployment Instructions:
->>>>>>> aa91dea (Initial commit after fixing HEAD)
