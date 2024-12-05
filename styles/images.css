@@ -1,0 +1,39 @@
+.images {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.images_filter_contrast {
+    filter: contrast(100%);
+}
+
+.images_filter_invert {
+    filter: invert(20%);
+}
+
+.images_filter_brightness {
+    filter: brightness(100%);
+}
+
+.images_filter_grayscale {
+    filter: grayscale(20%);
+}
+
+.images_filter_saturate {
+    filter: saturate(0);
+}
+
+.images_filter_blur {
+    filter: blur(4px);
+}
+
+.images_filter_multiple {
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5)) invert(20%) blur(1px);
+}
+
+.images_filter_sepia {
+    filter: sepia(50%);
+}

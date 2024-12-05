@@ -1,27 +1,19 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
     --accent-font: 'PressStart2P', fantasy;
     --main-font: 'Inter', sans-serif;
     --small-font-size: 14px;
     --medium-font-size: 18px;
-    --heart-color: #ff0000;
-
-
-
-    --themes-background: #FFF;
-    --themes-main-color: #000;
-    --themes-main-color-button: #000 0.6;
-    --pattern-color: repeating-linear-gradient(90deg,
-    #d3d3d3 0px 2px,
-            transparent 2px 4px),
-        repeating-linear-gradient(180deg,
-        #d3d3d3 0px 2px,
-            transparent 2px 4px),
-        linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-    --button-hover: #ffffff;
     --normal-font-weight: 400;
     --bold-font-weight: 700;
-    --favicon-color: #000;
+    --heart-color: #ff0000;
     --like-sparks-color: #ff0000;
     --color-text-stroke: #FFF;
+    --themes-background: #FFF;
+    --themes-main-color: #000;
+    --themes-main-color-button: rgba(0, 0, 0, 0.6);
+    --pattern-color:
+        repeating-linear-gradient(90deg, #d3d3d3 0px 2px, transparent 2px 4px),
+        repeating-linear-gradient(180deg, #d3d3d3 0px 2px, transparent 2px 4px),
+        linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+    --button-hover: #ffffff;
 }

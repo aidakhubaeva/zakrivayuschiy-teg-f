@@ -1,23 +1,11 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-
-*/
+@import url('images.css');
 
 .page {
   font-variation-settings: "wght" var(--bold-font-weight);
   background-image: var(--pattern-color);
   background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: grid;
   justify-items: center;
 }
@@ -29,9 +17,8 @@
   border: 2px solid var(--themes-main-color);
   font-family: var(--accent-font);
   text-transform: uppercase;
-  margin-block-start: 100px;
-  margin-block-end: 100px;
-  padding: 135px 0 19px 0;
+  margin: 100px 0;
+  padding: 135px 0 19px;
   inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
 }
 
@@ -41,8 +28,7 @@
 
 .header-title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 20px 0 25px;
 }
 
 .theme-menu__list {
@@ -103,7 +89,7 @@
 
 .main {
   display: grid;
-  justify-items: center
+  justify-items: center;
 }
 
 .section {
@@ -126,64 +112,27 @@
   overflow: hidden;
 }
 
-.images {
-  display: block;
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-}
-
-.images_filter_contrast {
-  filter: contrast(100%)
-}
-
-.images_filter_invert {
-  filter: invert(20%);
-}
-
-.images_filter_brightness {
-  filter: brightness(100%);
-}
-
-.images_filter_grayscale {
-  filter: grayscale(20%);
-}
-
-.images_filter_saturate {
-  filter: saturate(3)
-}
-
-.images_filter_blur {
-  filter: blur(4px);
-}
-
-.images_filter_multiple {
-  filter: drop-shadow(50%) invert(20%) blur(1px);
-}
-
-.images_filter_sepia {
-  filter: sepia(30%);
-}
-
 .section-logo {
   position: absolute;
   right: 25px;
   top: 25px;
   z-index: 2;
-  text-shadow: 0 0 1px currentColor;
   font-family: var(--accent-font);
   font-size: var(--small-font-size);
   font-weight: 400;
   text-transform: uppercase;
   opacity: 0.5;
   mix-blend-mode: hard-light;
+  text-shadow:
+    1px 1px var(--color-text-stroke),
+    -1px 1px var(--color-text-stroke),
+    1px -1px var(--color-text-stroke),
+    -1px -1px var(--color-text-stroke);
 }
 
-@supports ((-webkit-text-stroke: 1px var(--color-text-stroke)) or (text-stroke: 1px var(--color-text-stroke))) {
+@supports (-webkit-text-stroke: 1px var(--color-text-stroke)) {
   .section-logo {
     text-shadow: none;
-    text-stroke: 1px var(--color-text-stroke);
     -webkit-text-stroke: 1px var(--color-text-stroke);
   }
 }
@@ -191,13 +140,13 @@
 .content {
   display: flex;
   flex-direction: column;
-  padding: 25px 25px 22px 25px;
+  padding: 25px;
 }
 
 .text {
   font-size: var(--medium-font-size);
   font-variation-settings: "wght" var(--normal-font-weight);
-  line-height: 21px;
+  line-height: 1.5;
 }
 
 .text:last-child {
@@ -205,22 +154,21 @@
 }
 
 .card__controls {
-  margin-block-end: 23px;
-  margin-inline-end: 25px;
+  margin: 0 25px 23px auto;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: flex-end;
 }
 
 .card__icon-button {
-  transition: border-color 0.3s ease;
   appearance: none;
   padding: 0;
-  margin-inline-end: 5px;
-  border-color: transparent;
-  cursor: pointer;
+  margin-right: 5px;
+  border: 2px solid transparent;
   background-color: transparent;
+  cursor: pointer;
   position: relative;
+  transition: border-color 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -228,21 +176,21 @@
 }
 
 .card__icon-button:focus-visible {
-  border: 2px solid var(--themes-main-color);
+  border-color: var(--themes-main-color);
 }
 
 .button {
   appearance: none;
   border: 2px solid var(--themes-main-color);
-  cursor: pointer;
   background-color: transparent;
-  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
   position: relative;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .card__like-button {
   min-height: 38px;
-  inline-size: 130px;
+  width: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,12 +201,12 @@
   position: absolute;
   left: 0;
   top: 0;
-  background-color: var(--themes-main-color);
-  transform-origin: left;
-  transform: scaleX(0);
-  transition: transform 0.5s ease-in-out;
   width: 100%;
   height: 100%;
+  background-color: var(--themes-main-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
 }
 
 .button:hover::before {
@@ -274,7 +222,7 @@
 }
 
 .card__save-button {
-  padding-block-end: 100px;
+  padding-bottom: 100px;
 }
 
 .save-button {
@@ -291,6 +239,7 @@
   color: var(--button-hover);
   font-family: var(--accent-font);
   font-size: var(--small-font-size);
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -299,18 +248,18 @@
   z-index: 1;
   mix-blend-mode: difference;
   color: var(--button-hover);
-  block-size: 21px;
-  inline-size: 21px;
+  width: 21px;
+  height: 21px;
 }
 
 .dialog__id {
   display: flex;
-  align-items: center;
-  background-color: var(--themes-background);
-  max-inline-size: 357px;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
   padding: 30px;
+  max-width: 357px;
+  background-color: var(--themes-background);
 }
 
 .dialog__id:not([open]) {
@@ -319,7 +268,7 @@
 }
 
 .dialog__id::backdrop {
-  background-color: rgba(0 0 0/0.75);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .dialog__menu {
@@ -329,54 +278,49 @@
 }
 
 .dialog__form {
-  inline-size: 100%;
+  width: 100%;
 }
 
 .dialog__floppy {
   color: var(--themes-main-color);
   flex-shrink: 0;
-  inline-size: 39px;
-  block-size: 39px;
+  width: 39px;
+  height: 39px;
 }
 
 .dialog__text {
   text-transform: uppercase;
-  line-height: 150%;
+  line-height: 1.5;
   color: var(--themes-main-color);
   font-family: var(--accent-font);
   font-size: var(--small-font-size);
 }
 
 .dialog__button {
-  inline-size: 100%;
-  text-transform: uppercase;
+  width: 100%;
   padding: 9px 17px 5px 17px;
   border: 2px solid var(--themes-main-color);
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 375px) {
   .header {
-    inline-size: 100%;
+    width: 100%;
     padding-top: 120px;
   }
 
-  .save__floppy {
-    block-size: 28px;
-    inline-size: 28px;
-  }
-
-
+  .save__floppy,
   .floppy {
-    block-size: 28px;
-    inline-size: 28px;
+    width: 28px;
+    height: 28px;
   }
 
   .save-button {
-    flex-direction: column
+    flex-direction: column;
   }
 
   .dialog__id {
     padding: 30px 40px;
-    max-inline-size: 341px;
+    max-width: 341px;
   }
 }
