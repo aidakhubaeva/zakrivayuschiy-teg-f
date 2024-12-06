@@ -117,12 +117,12 @@
   right: 25px;
   top: 25px;
   z-index: 2;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
   font-family: var(--accent-font);
   font-size: var(--small-font-size);
   font-weight: 400;
   text-transform: uppercase;
-  opacity: 0.5;
-  mix-blend-mode: hard-light;
   text-shadow:
     1px 1px var(--color-text-stroke),
     -1px 1px var(--color-text-stroke),
@@ -135,6 +135,13 @@
     text-shadow: none;
     -webkit-text-stroke: 1px var(--color-text-stroke);
   }
+}
+
+.section-logo code {
+  font-family: var(--accent-font);
+  font-size: var(--small-font-size);
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .content {
