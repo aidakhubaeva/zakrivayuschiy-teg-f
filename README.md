@@ -5,7 +5,7 @@ https://aidakhubaeva.github.io/zakrivayuschiy-teg-f/
 
 ![Project Preview](images/zakrivayuschiy-teg-f.jpg)
 
-**"Zakrivayuschiy Teg"** is the final project in web layout development within the course, aimed at consolidating all previously learned skills. The project includes complex animations, adaptive design, color scheme switching, and interactive elements. The main goal is to create an interface fully compliant with the provided layout.
+**"Zakrivayuschiy Teg"** is the final project in web layout development within the course, aimed at consolidating all previously learned skills: adaptive layout development, cross-browser compatibility, pixel-perfect layout, CSS Grid and Flexbox, BEM methodology, SCSS/SASS, accessibility (compliance with ARIA and WCAG), performance optimization, interactive animations, dark and light mode switching, integration of interactive elements, modern HTML5 and CSS3 features, and working with variable fonts. The project includes complex animations, adaptive design, color scheme switching, and interactive elements. The main goal is to create an interface fully compliant with the provided layout.
 
 ---
 
